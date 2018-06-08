@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+@import url(generallayout.css);
+
+@import url(my.css);
+
+.btn {
+	font-size: 25px;
+	width: 210px;
+}
+</style>
+</head>
+<body>
+
+	<div id="container">
+		<table style="background-color: green">
+			<div id="header">
+				<div id="header1">
+					<tr>
+						<td><img class="img-thumbnail" src="logo.jpg" width=100px>
+						</td>
+				</div>
+				<td>
+					<div id="header2">
+						<div class="btn-group">
+							<button type="button" class="btn btn-success">
+								<a href="homePage.jsp" style="color: white">Home</a>
+							</button>
+							<button type="button" class="btn btn-success">
+								<a href="Aboutus.html" style="color: white">About Us</a>
+							</button>
+							<button type="button" class="btn btn-success" data-toggle="modal"
+								data-target="#myModal">Sign Up</button>
+							<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog modal-sm">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Sign Up</h4>
+										</div>
+										<div class="modal-body">
+											<p>
+
+												<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+												<html>
+<head>
+<style>
+@import
+url(my.css)
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<form action="HomeServlet" method="post">
+		<input type="text" name="username" id="username"
+			placeholder="username" required></input><br> <br> <input
+			type="password" name="password" id="password" placeholder="password"
+			required></input><br> <br> <input type="text"
+			name="emailid" id="emailid" placeholder="emailid" required></input><br>
+		<br> <input type="text" name="phno" id="phno"
+			placeholder="phone number"
+			onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+			required></input> <br> <span id="msg"></span> <input
+			type="submit" name="submit" id="submit" value="Sign Up"></input>
+	</form>
+</body>
+												</html>
+
+
+
+
+											</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success  dropdown-toggle"
+									data-toggle="dropdown">
+									Login <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<button type="button" class="btn btn-default btn-xs"
+										data-toggle="modal" data-target="#myModal1">Admin</button>
+									<br>
+									<button type="button" class="btn btn-default btn-xs"
+										data-toggle="modal" data-target="#myModal2">User</button>
+								</ul>
+								<!-- Modal 1-->
+								<div class="modal fade" id="myModal1" role="dialog">
+									<div class="modal-dialog modal-sm">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Admin</h4>
+											</div>
+											<div class="modal-body">
+												<p>
+
+													<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+													<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style>
+@import
+url(my.css)
+</style>
+</head>
+<body>
+	<form action="AdminServlet" method="post">
+		<br>
+		<center>
+			<input type="text" name="emailid" id="emailid" placeholder="emailid"
+				required></input><br> <br>
+		</center>
+		<center>
+			<input type="password" name="password" id="password"
+				placeholder="password" required></input>
+		</center>
+		<span id="msg"></span> <input type="submit" name="submit" id="submit"
+			value="Log in"></input> <br>
+	</form>
+</body>
+													</html>
+
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+								<!-- Modal 2-->
+								<div class="modal fade" id="myModal2" role="dialog">
+									<div class="modal-dialog modal-sm">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">User</h4>
+											</div>
+											<div class="modal-body">
+												<p>
+
+													<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+													<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style>
+@import
+url(my.css)
+</style>
+</head>
+<body>
+	<form action="HomeServlet" method="post">
+		<br>
+		<center>
+			<input type="text" name="emailid" id="emailid" placeholder="emailid"
+				required></input><br> <br>
+		</center>
+		<center>
+			<input type="password" name="password" id="password"
+				placeholder="password" required></input>
+		</center>
+		<span id="msg"></span> <input type="submit" name="submit" id="submit"
+			value="Log in"></input> <br>
+	</form>
+</body>
+													</html>
+
+
+
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+
+
+
+
+							</div>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-success dropdown-toggle"
+									data-toggle="dropdown">
+									Contact Us <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li>Bhimavaram-9876543210</li>
+									<li>Vijaywada-9078564534</li>
+									<li>Chennai-9067564534</li>
+									<li>bangalore-9078568900</li>
+									<li>Vizag-9078564123</li>
+									<li>Guntur-9078523148</li>
+									<li>Hyderabad-9078564534</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				<td>
+				</tr>
+		</table>
+		<div id="main">
+			<h2 class="Red XCN" style="color: green">About us</h2>
+			<h4 id="BirdsEye" class="Red TextBold XCN" style="color: green">Who
+				we are!</h4>
+			<p class="western">GreenBus is the number 1 inter-city bus
+				ticketing service in the world. GreenBus is a part of India’s
+				primary online travel group.</p>
+			<h4 id="Ourstory" class="Red TextBold XCN" style="color: green">Our
+				Credentials</h4>
+			<p class="western">Founded in 2017 in Bhimavaram, India, GreenBus
+				now connects various cities across the globe with</p>
+			<p class="western">just a click of a button. GreenBus has
+				revolutionized the online bus ticket booking industry by bringing
+				together over 2,000 bus operators covering over 100,000 routes
+				across countries.</p>
+			<p class="western">With its mobile app downloaded by over 7.5
+				million loyal customers, GreenBus is the largest community of bus
+				travellers in the world.</p>
+			<h4 id="OurChannel" class="Red TextBold XCN" style="color: green">So,
+				Why Book With Us?</h4>
+			<p class="western">GreenBus provides bus travellers, the most
+				uncomplicated and hassle-free booking experience ever.</p>
+			<p class="western">Choose your destination, select bus based on
+				user ratings, view the seat layout, choose convenient seats, and
+				book your ticket in just a few clicks!</p>
+			<p class="western">The GreenBus experience does not end with the
+				booking.</p>
+			<p class="western">In a series of industry leading features,
+				GreenBus offers navigation to bus boarding points, real-time
+				tracking of buses and information on rest stops.</p>
+			<p class="western">GreenBus also partners with leading bus
+				operators to provide exclusive ‘Green Deals” to customers booking on
+				GreenBus.</P>
+			<p class="western">A dedicated 24*7 customer-care team is
+				available to cater to all the passengers needs while they are
+				on-the- go.</P>
+
+
+		</div>
+
+	</div>
+</body>
+</html>
+
+

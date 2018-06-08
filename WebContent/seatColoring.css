@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+.checkbox input {
+	display: none;
+}
+
+.checkbox block {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: gray;
+}
+
+.checkbox span {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: #99ccff;
+}
+
+.checkbox input:checked+span {
+	background-color: #48A414;
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform: -webkit-translate(-50%, -50%);
+	transform: -moz-translate(-50%, -50%);
+	transform: -ms-translate(-50%, -50%);
+}
+
+input[type="checkbox"] {
+	width: 50px;
+	height: 50px;
+}
